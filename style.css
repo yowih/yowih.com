@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
+
+@font-face {
+    font-family: "Mondwest";
+    src: url("fonts/PPMondwest-Regular.otf") format("opentype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p, li, a, button {
+    font-family: "Tiny5", sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+#logo-profile {
+    width: 8vw;
+    object-fit: cover;
+    border-radius: 8vw;
+    align-items: center;
+}
+
+#logo p {
+    font-family: "Mondwest";
+    font-size: 6vw;
+    cursor: pointer;
+    font-weight: 400;
+    margin-left: 2vw;
+}
+
+#nav-links {
+    display: none;
+}
+
+header nav {
+    flex: 1;
+    text-align: right;
+}
+
+header nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 20px;
+    border-bottom: 2px solid white;
+    font-size: 15px;
+}
+
+header nav ul li:hover {
+    border-bottom: 2px solid black;
+}
+
+button {
+    padding: 9px 25px;
+    border: 1px solid black;
+    cursor: pointer;
+    background-color: lightgray;
+    font-size: 3vw;
+    align-items: center;
+}
+
+button:hover {
+    background-color: rgb(169, 169, 169);
+}
+
+#profile-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5px 0 0 0;
+    background-color: lightgray;
+}
+
+#profile-picture {
+    width: 120px;
+    display: block;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+}
+#profile-picture:active {
+    transform: translateY(50px);
+}
+
+#profile-container {
+    background-color: white;
+    padding-top: 10px;
+    z-index: 2;
+    position: relative;
+}
+
+#profile-name {
+    text-align: center;
+    letter-spacing: -1px;
+    font-size: 40px;
+    font-family: "Mondwest";
+}
+
+#profile-role {
+    text-align: center;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-family: "Tiny5";
+    color: green;
+}
+
+#profile-description {
+    margin: 20px 30px 40px 30px;
+    font-size: 15px;
+    font-family: "Tiny5";
+    text-transform: uppercase;
+    text-align: justify;
+}
+
+#projects-banner {
+    margin: 0 30px;
+}
+
+#projects-banner h2 {
+    font-family: "Mondwest";
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+
+#projects-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.project a img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.project img:hover {
+    transform: scale(1.1);
+}
+
+.project p {
+    font-size: 10px;
+    text-align: center;
+}
+
+#contact {
+    padding: 0 20px;
+}
+
+#contact h2 {
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    display: inline;
+}
+
+#contact-links {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#contact-links a {
+    font-size: 10px;
+    font-weight: 500;
+    transition: all 0.4s ease;
+    margin-right: 0px;
+}
+
+#contact-links a:hover {
+    color: #777;
+}
+
+@media screen and (min-width: 992px) {
+    #navbar {
+        margin: 40px;
+    }
+    #logo-profile {
+        width: 4vw;
+    }
+    #logo p {
+        font-size: 3vw;
+    }
+    button {
+        font-size: 1.5vw;
+    }
+    #profile-banner {
+        display: block;
+        height: 19rem;
+    }
+    #profile-picture {
+        width: 300px;
+        margin: 0 auto;
+    }
+    #profile-picture:hover {
+        transform: scale(1.05);
+    }
+    #profile-picture:active {
+        transform: translateY(130px)
+    }
+    #profile-name {
+        font-size: 120px;
+    }
+    #profile-role {
+        font-size: 25px;
+    }
+    #profile-description {
+        font-size: 25px;
+        margin: 40px 200px 80px 200px;
+        text-align: justify;
+    }
+    #projects-banner {
+        margin-top: 3em;
+    }
+    #projects-banner h2 {
+        font-size: 34px;
+    }
+    #projects-container {
+        margin: 40px 0;
+    }
+    .project a img {
+        width: 10rem;
+        height: 10rem;
+    }
+    .project p {
+        font-size: 20px;
+    }
+    #contact h2 {
+        font-size: 30px;
+    }
+    #contact-links a {
+        font-size: 20px;
+    }
+}
