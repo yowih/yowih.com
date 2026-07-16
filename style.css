@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
-
 @font-face {
     font-family: "Mondwest";
     src: url("fonts/PPMondwest-Regular.otf") format("opentype");
@@ -11,127 +10,72 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 html {
     scroll-behavior: smooth;
 }
 
-p, li, a, button {
-    font-family: "Tiny5", sans-serif;
-    font-weight: 400;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-#navbar {
+header {
+    background-color: black;
+    width: 100%;
+    height: 50px;
     display: flex;
     align-items: center;
-    margin: 20px;
-}
-
-#logo {
-    display: flex;
-    align-items: center;
-}
-
-#logo-profile {
-    width: 8vw;
-    object-fit: cover;
-    border-radius: 8vw;
-    align-items: center;
-}
-
-#logo p {
+    justify-content: center;
     font-family: "Mondwest";
-    font-size: 6vw;
-    cursor: pointer;
-    font-weight: 400;
-    margin-left: 2vw;
+    padding: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: top 0.3s ease-in-out;
+    z-index: 10;
 }
-
-#nav-links {
-    display: none;
+#yowih {
+    font-size: 50px;
+    font-style: italic;
+    color: white;
+    text-decoration: none;
 }
-
-header nav {
-    flex: 1;
-    text-align: right;
-}
-
-header nav ul {
-    display: inline-block;
-    list-style-type: none;
-}
-
-header nav ul li {
-    display: inline-block;
-    list-style-type: none;
-    margin-right: 20px;
-    border-bottom: 2px solid white;
-    font-size: 15px;
-}
-
-header nav ul li:hover {
-    border-bottom: 2px solid black;
-}
-
-button {
-    padding: 9px 25px;
-    border: 1px solid black;
-    cursor: pointer;
-    background-color: lightgray;
-    font-size: 3vw;
-    align-items: center;
-}
-
-button:hover {
-    background-color: rgb(169, 169, 169);
+#subir {
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
 }
 
 #profile-banner {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: 5px 0 0 0;
-    background-color: lightgray;
+    margin-top: 30vh;
 }
-
 #profile-picture {
     width: 120px;
     display: block;
     position: relative;
     z-index: 1;
     transition: all 0.3s ease-in-out;
+    border-radius: 100%;
+    top: 40px;
 }
 #profile-picture:active {
-    transform: translateY(50px);
+    cursor: pointer;
+    transform: translateY(-50px);
 }
-
 #profile-container {
     background-color: white;
     padding-top: 10px;
     z-index: 2;
     position: relative;
 }
-
 #profile-name {
     text-align: center;
     letter-spacing: -1px;
-    font-size: 40px;
+    font-size: 10vw;
     font-family: "Mondwest";
+    font-style: italic;
+    text-transform: none;
 }
-
-#profile-role {
-    text-align: center;
-    font-size: 10px;
-    font-weight: 500;
-    letter-spacing: 2px;
-    font-family: "Tiny5";
-    color: green;
-}
-
 #profile-description {
-    margin: 20px 30px 40px 30px;
+    margin: 40vh 30px 40px 30px;
     font-size: 15px;
     font-family: "Tiny5";
     text-transform: uppercase;
@@ -152,7 +96,7 @@ button:hover {
 #projects-container {
     display: flex;
     justify-content: space-around;
-    margin: 20px 0;
+    margin: 40vh 0;
 }
 
 .project a img {
@@ -163,12 +107,13 @@ button:hover {
 }
 
 .project img:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .project p {
-    font-size: 10px;
     text-align: center;
+    font-family: "Mondwest";
+    text-transform: uppercase;
 }
 
 #contact {
@@ -216,16 +161,16 @@ button:hover {
     #profile-banner {
         display: block;
         height: 19rem;
+        margin-top: 20vh;
     }
     #profile-picture {
         width: 300px;
         margin: 0 auto;
-    }
-    #profile-picture:hover {
-        transform: scale(1.05);
+        top: 100px;
+        cursor: pointer;
     }
     #profile-picture:active {
-        transform: translateY(130px)
+        transform: translateY(-130px);
     }
     #profile-name {
         font-size: 120px;
@@ -235,7 +180,7 @@ button:hover {
     }
     #profile-description {
         font-size: 25px;
-        margin: 40px 200px 80px 200px;
+        margin: 50vh 200px;
         text-align: justify;
     }
     #projects-banner {
@@ -245,7 +190,7 @@ button:hover {
         font-size: 34px;
     }
     #projects-container {
-        margin: 40px 0;
+        margin: 40vh 0;
     }
     .project a img {
         width: 10rem;
