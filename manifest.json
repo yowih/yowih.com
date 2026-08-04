@@ -1,7 +1,6 @@
 {
     "name": "YowiH Web",
     "short_name": "YowiH",
-    "start_url": "/",
     "display": "standalone",
     "background_color": "#FFFFFF",
     "theme_color": "#000000",
