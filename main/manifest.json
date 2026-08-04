@@ -1,0 +1,15 @@
+{
+    "name": "YowiH Web",
+    "short_name": "YowiH",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#FFFFFF",
+    "theme_color": "#000000",
+    "icons": [
+        {
+            "src": "res/yowi-face.png",
+            "sizes": "859x859",
+            "type": "image/png"
+        }
+    ]
+}
