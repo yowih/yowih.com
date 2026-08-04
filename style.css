@@ -48,17 +48,16 @@ header {
     margin-top: 30vh;
 }
 #profile-picture {
-    width: 120px;
+    width: 20%;
     display: block;
     position: relative;
     z-index: 1;
-    transition: all 0.3s ease-in-out;
-    border-radius: 100%;
-    top: 40px;
+    transition: all 0s ease-in-out;
+    top: 50%;
 }
 #profile-picture:active {
     cursor: pointer;
-    transform: translateY(-50px);
+    transform: translateY(30%);
 }
 #profile-container {
     background-color: white;
@@ -164,13 +163,14 @@ header {
         margin-top: 20vh;
     }
     #profile-picture {
-        width: 300px;
+        width: 20%;
         margin: 0 auto;
-        top: 100px;
+        top: 35%;
         cursor: pointer;
+        transition: all 0s ease-in-out;
     }
     #profile-picture:active {
-        transform: translateY(-130px);
+        transform: translateY(10%);
     }
     #profile-name {
         font-size: 120px;
